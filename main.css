@@ -47,19 +47,19 @@ body, html {
 }
 
 .bg1 {
-	background-image: url('images/about.jpg');
+	background-image: url('/about.jpg');
 }
 
 .bg2 {
-	background-image: url('images/paint.jpg');
+	background-image: url('/paint.jpg');
 }
 
 .bg3 {
-	background-image: url('images/code.jpg');
+	background-image: url('/code.jpg');
 }
 
 .bg4 {
-	background-image: url('images/contact.jpg');
+	background-image: url('/contact.jpg');
 }
 
 .label {
