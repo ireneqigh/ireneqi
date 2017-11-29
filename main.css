@@ -1,0 +1,182 @@
+
+
+* {
+  box-sizing: border-box;
+} 
+
+a {
+	color: white;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(250, 230, 200);
+}
+
+header {
+	text-align: center;
+	height: 80px;
+	margin-top: 3%; 
+}
+
+.square1, .square2, .square3, .square4 {
+	text-align: center;
+	display: inline-block;
+	width: 34%;
+	height: 300px;
+	padding: 9.5% 0%;
+	float: left;
+	font-size: 40px;
+} 
+
+body, html {
+	height: 100%;
+}
+
+.bg1, .bg2, .bg3, .bg4 {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	opacity: 0.6;
+	min-height: 400px;
+}
+
+.bg1 {
+	background-image: url('images/about.jpg');
+}
+
+.bg2 {
+	background-image: url('images/paint.jpg');
+}
+
+.bg3 {
+	background-image: url('images/code.jpg');
+}
+
+.bg4 {
+	background-image: url('images/contact.jpg');
+}
+
+.label {
+	color: black;	
+	position: absolute;
+	top: 60%;
+	left: 0;
+	width: 100%;
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+
+.box {
+	background-color: rgb(250, 220, 140);
+	padding: 20px;
+	border-radius: 3px;
+}
+
+h2 {
+	letter-spacing: 2px;
+}
+
+h3 {
+	text-align: center;
+	margin: 8% 0 0 0;
+}
+
+p {
+	font-size: 17px;
+	padding: 4%;
+	margin: 5% 20%;
+	text-align: justify;
+} 
+
+.cap {
+	font-size: 14px;
+	margin: 0;
+	padding: 4%;
+}
+
+.square1 {
+	background: radial-gradient(farthest-corner at 30% 40%, 
+		rgb(250, 160, 130), rgb(245, 130, 80), rgb(230, 100, 80));
+}
+
+.square2 {
+	background: radial-gradient(farthest-corner at 30% 60%, 
+		rgb(250, 180, 130), rgb(240, 150, 90), rgb(240, 120, 60));
+}
+
+.square3 {
+	background: radial-gradient(farthest-corner at 70% 40%, 
+		rgb(255, 165, 150), rgb(240, 130, 100), rgb(240, 120, 90));
+}
+
+.square4 {	 
+	background: radial-gradient(farthest-corner at 70% 60%, 
+		rgb(255, 210, 130), rgb(245, 180, 110), rgb(240, 150, 90));
+}
+
+#mainpic {
+	width: 31.99%;
+	height: 600px;
+	padding: 0%;
+}
+
+/* CAROUSEL */
+.carousel-inner img {
+	max-height: 40%;
+    margin: 0 auto; 
+}
+
+#myCarousel, #myCarousel2 {
+	width: 70%; 
+	margin: 0 auto;
+}
+
+.container {
+	width: 70%;
+}
+
+/* TAB GALLERY */
+.column {
+    float: left;
+    width: 25%;
+    padding: 8px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.7; 
+    cursor: pointer; 
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image */
+.expandedImg {
+    position: relative;
+    display: none;
+}
+
+/* Closable button inside the image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
