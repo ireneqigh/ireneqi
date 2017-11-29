@@ -1,2 +1,388 @@
-My page
-   
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Irene Qi</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href=/Users/iq/Web/css/bootstrap.min.css>
+	<link rel="stylesheet" href=/Users/iq/Web/personal/main.css>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/Users/iq/Web/js/bootstrap.min.js"></script> 
+
+	<script type="text/javascript">
+		function carouselNormalization() {
+		  var items   = $('#myCarousel .item'),              // grab all the slides
+		      heights = [],                                   // array to store heights
+		      tallest;                                        // tallest slide
+
+		  if (items.length) {
+		    function normalizeHeights() {
+		      items.each(function() {
+		        heights.push($(this).height());               // add each slide's height
+		      });                                             // to the array
+
+		      tallest = Math.max.apply(null, heights);        // find the largest height
+
+		      items.each(function() {
+		        $(this).css('min-height', tallest + 'px');    // set each slide's minimum
+		      });                                             // height to the largest
+		    };
+
+		    normalizeHeights();
+
+		    $(window).on('resize orientationchange', function() {
+		      tallest = 0, heights.length = 0;               // reset the variables
+
+		      items.each(function() {
+		        $(this).css('min-height', '0');              // reset each slide's height
+		      });
+
+		      normalizeHeights();                            // run it again
+		    });
+		  }
+		}
+		window.onload = function() {
+		  carouselNormalization();
+		}
+	</script>
+</head>
+
+<style>
+	@media screen and (max-width: 1100px) {
+		.square1, .square2, .square3, .square4 {
+			height: 250px;
+		}
+		#mainpic {
+			height: 500px;
+		}
+	}
+	@media screen and (max-width: 900px) {
+		.square1, .square2, .square3, .square4 {
+			width: 65%;
+			padding: 5%;
+			height: 125px;
+			font-size: 25px;
+		}
+		#mainpic {
+			width: 35%
+		}
+		.square1 {
+			background: rgb(240, 110, 90);
+		}
+		.square2 {
+			background: rgb(240, 150, 90);
+		}
+		.square3 {
+			background: rgb(240, 130, 100);
+		}
+		.square4 {
+			background: rgb(245, 180, 110);
+		}
+		#myCarousel, #myCarousel2 {
+			width: 80%;
+		}
+	}
+	@media screen and (max-width: 700px) {
+		.square1, .square2, .square3, .square4 {
+			width: 50%;
+			height: 270px;
+			padding: 20% 0% 0% 0%;
+		}
+		header {
+			height: 65px;
+		}
+		h2, h3 {
+			margin: 0%;
+		}
+		p {
+			margin: 7% 13% 7% 15%;
+			padding: 10% 0;
+			font-size: 14px;
+		}
+		#mainpic {
+			width: 50%;
+			height: auto;
+			padding: 8% 4% 8% 8%;
+			display: block;
+			margin: 0 auto 0 23%;
+		}
+
+	}
+	@media screen and (max-width: 550px) {
+		.container {
+			width: 93%;
+		}
+		.container-fluid {
+			padding: 0px;
+		}
+		#myCarousel, #myCarousel2 {
+			width: 100%;
+		}
+		.column {
+			padding: 2px; 
+		}
+		.cap {
+			font-size: 12px;
+		}
+	}
+	@media screen and (max-width: 400px) {
+		.container {
+			width: 100%;
+		}
+		.square1, .square2, .square3, .square4 {
+			width: 100%;
+			height: 70px;
+			font-size: 17px;
+			padding: 7%;
+		}
+		h2 {
+			font-size: 18px;
+		}
+		p {
+			text-align: left;
+			font-size: 12px;
+		}
+		.bg1, .bg2, .bg3, .bg4 {
+			min-height: 300px;
+		}
+		.label {
+			font-size: 20px;
+		}
+		.box {
+			padding: 15px;
+		}
+		.square1 {
+			background: rgb(240, 110, 90);
+		}
+		.square2 {
+			background: rgb(240, 150, 90);
+		}
+		.square3 {
+			background: rgb(240, 130, 100);
+		}
+		.square4 {
+			background: rgb(245, 180, 110);
+		}
+			
+	}
+
+	
+</style>
+
+<header>
+	<h1>IRENE QI</h1>
+</header>
+
+<body>	
+	<div class= "square1">
+		<a href="#about">
+			<h2>ABOUT ME</h2>
+		</a>
+	</div> 
+
+	<div class= "square3">
+		<a href="#portfolios">
+			<h2>PORTFOLIOS</h2>
+		</a>
+	</div> 
+
+	<div class= "square2">
+		<a href="#projects">
+			<h2>PROJECTS</h2>
+		</a>
+	</div> 
+
+	<div class= "square4">
+		<a href="#contact">
+			<h2>CONTACT</h2>
+		</a>
+	</div> 
+
+	<picture>
+		<source media="(max-width: 700px)" srcset="images/mainpiccirc.jpg">
+		<img id="mainpic" src="images/mainpic.jpg" alt="Irene Qi">
+	</picture>
+
+	<div class="bg1" style="width: 100%">
+		<span class="label" id="about"><span class="box">Who Am I?</span></span>
+	</div>
+
+	<div style="width: 100%; height: auto; padding: 0">	
+		<p>Hello! I am a sophomore at the University of Pennsylvania, The Wharton School. I intend to concentrate in Marketing and Finance, and graduate with a minor in Computer Science. I am particularly interested in corporate strategy, brand management, and data analytics. <br><br>
+		At Penn, I am a marketer for our chapter of the food publication Spoon University. I am also on the Coalition Committee of Habitat for Humanity UPenn, where I help organize our semesterly dodgeball fundraiser and fall Rake-a-Thon. In my spare time I enjoy exploring the city, yoga, painting, and food adventures.
+		</p>
+	</div>
+		
+
+	<div class="bg2" style="width: 100%">
+		<span class="label" id="portfolios"><span class="box">Creative Works</span></span>
+	</div>
+
+	<div style="width: 100%; height: auto; padding: 5% 3%">
+
+		<div class="container">
+			<div class="panel-group" id="accordion">
+			<div class="panel panel-default">
+			    <div class="panel-heading">
+			        <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Graphic Design</a>
+			        </h4>
+			    </div>
+			    <div id="collapse1" class="panel-collapse collapse in">
+			    	<div class="panel-body">
+			    		<span style="font-size: 12px; color: lightgray">Click to expand image</span>
+						<!-- The four columns -->
+						<div class="row">
+						  <div class="column">
+						    <img src="images/bank.png" alt="1" style="width:100%; padding-left: 7px" onclick="openImg('1');">
+						  </div>
+						  <div class="column">
+						    <img src="images/bankmac.png" alt="2" style="width:100%" onclick="openImg('2');">
+						  </div>
+						  <div class="column">
+						    <img src="images/habitatrake.png" alt="3" style="width:100%" onclick="openImg('3');">
+						  </div>
+						  <div class="column">
+						    <img src="images/flower.jpg" alt="4" style="width:100%; padding-right: 7px" onclick="openImg('4');">
+						  </div>
+						</div>
+
+						<!-- The expanding image grid (hidden by default) -->
+						<div id="1" class="expandedImg">
+						  <a target="_blank" href="images/bank.png"><img src="images/bank.png" alt="1" style="width:100%"></a>
+						  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+						  <article style="background-color: #f5f5f5; padding-top: 5px"><p class="cap">This is a webpage mockup of a hypothetical bank's loan application process. My goals were to make the process seem easy to understand and to facilitate the process of choosing the right loan. <br><br> I chose to include a timeline of the application process to provide a quick and simple overview, and organized the packages in distinct blocks. If a customer has unanswered questions, a button at the bottom of the page would lead to a chat screen, and the customer would be connected to an employee.</p></article>
+						</div>
+
+						<div id="2" class="expandedImg">
+						  <img src="images/bankmac.png" alt="2" style="width:100%">
+						  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+						</div>
+
+						<div id="3" class="expandedImg">
+						  <img src="images/habitatrake.png" alt="3" style="width:100%">
+						  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+						  <article style="background-color: #f5f5f5; padding-top: 5px"><p class="cap">A flyer for Habitat for Humanity's Rake-A-Thon fundraiser.</p></article>
+						</div>
+
+						<div id="4" class="expandedImg">
+						  <img src="images/flower.jpg" alt="4" style="width:100%">
+						  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+						</div>
+
+						<script>
+						function openImg(imgName) {
+						  var i, x;
+						  x = document.getElementsByClassName("expandedImg");
+						  for (i = 0; i < x.length; i++) {
+						     x[i].style.display = "none";
+						  }
+						  document.getElementById(imgName).style.display = "block";
+						}
+						</script>
+			    	</div>
+			    </div>
+			</div>
+			<div class="panel panel-default">
+			    <div class="panel-heading">
+			    	<h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Fine Art</a>
+			    	</h4>
+			    </div>
+			  	<div id="collapse2" class="panel-collapse collapse">
+			    	<div class="panel-body"> 
+			    		<div class="container-fluid"> 
+						    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+						      <!-- Indicators -->
+						      <ol class="carousel-indicators">
+						        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						        <li data-target="#myCarousel" data-slide-to="1"></li>
+						        <li data-target="#myCarousel" data-slide-to="2"></li>
+						        <li data-target="#myCarousel" data-slide-to="3"></li>
+						        <li data-target="#myCarousel" data-slide-to="4"></li>
+						        <li data-target="#myCarousel" data-slide-to="5"></li>
+						        <li data-target="#myCarousel" data-slide-to="6"></li>
+						        <li data-target="#myCarousel" data-slide-to="7"></li>
+						      </ol>
+
+						      <!-- Wrapper for slides -->
+						      <div class="carousel-inner">
+						        <div class="item active"><a target="_top" href="images/man.jpg">
+						          <img src="images/man.jpg" alt="1" style="width: 50%"></a>
+						        </div>
+						        <div class="item">
+						          <img src="images/fish.jpg" alt="2" >
+						        </div>   
+						        <div class="item">
+						          <img src="images/turtle.jpg" alt="3" style="width: 90%">
+						        </div>
+						        <div class="item">
+						          <img src="images/kid.jpg" alt="4" style="width: 50%">
+						        </div>
+						        <div class="item">
+						          <img src="images/world.jpg" alt="5" style="width: 50%">
+						        </div>
+						        <div class="item">
+						          <img src="images/duck.jpg" alt="6" >
+						        </div>
+						        <div class="item">
+						          <img src="images/flower.jpg" alt="7" >
+						        </div>
+						      </div>
+
+						      <!-- Left and right controls -->
+						      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+						        <span class="glyphicon glyphicon-chevron-left"></span>
+						        <span class="sr-only">Previous</span>
+						      </a>
+						      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+						        <span class="glyphicon glyphicon-chevron-right"></span>
+						        <span class="sr-only">Next</span>
+						      </a>
+						    </div>
+				    	</div>
+			    	</div>
+			    </div>
+			</div>			
+			</div> 
+		</div>
+
+    	<!-- <p> dropdown 1 <br> dropdown 2 <br> // <br> // <br> // <br> </p> -->
+	</div>
+		
+
+	<div class="bg3" style="width: 100%">
+		<span class="label" id="projects"><span class="box">Web Development</span></span>
+	</div>
+
+	<div style="width: 100%; height: auto; padding: 0">	
+		<p style="margin: 3% 10%"><a href="https://ireneqigh.github.io" style="color: rgb(100, 100, 100); font-weight: bold">Woodcreek Apartments Website</a><br> 
+		<span style="font-style: italic;">A simple, modern, informative website for an apartment complex.</span> <br><br>
+		Featuring: <br><span class="glyphicon" style="color: rgb(250, 220, 140)">&#xe080;</span>Full-screen images <br>
+		<span class="glyphicon" style="color: rgb(250, 220, 140)">&#xe080;</span>Fade-in fade-out sections <br> 
+		<span class="glyphicon" style="color: rgb(250, 220, 140)">&#xe080;</span>Image slideshows <br> 
+		<span class="glyphicon" style="color: rgb(250, 220, 140)">&#xe080;</span>Interactive directions map <br>
+		<img src="images/wcmac.png" alt="Woodcreek Apartments" style="width: 100%; padding: 3% 3% 0 3%">
+		 </p>
+	</div>
+
+
+	<div class="bg4" style="width: 100%">
+		<span class="label" id="contact"><span class="box">Contact Me</span></span>
+	</div>
+
+	<div style="width: 100%; height: auto; padding: 0">	
+		<p style="text-align: center;">If you would like to learn more about me or would like to know more about my work, please feel free to reach out!<br><br>
+		<span class="glyphicon glyphicon-envelope" style="color: rgb(250, 220, 140)"></span> Email: ireneqi@wharton.upenn.edu </p>
+	</div>
+
+
+</body>
+
+
+<footer>
+</footer>
+
+
+</html>
