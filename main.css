@@ -47,19 +47,19 @@ body, html {
 }
 
 .bg1 {
-	background-image: url('/about.jpg');
+	background-image: url('/ireneqi/about.jpg');
 }
 
 .bg2 {
-	background-image: url('/paint.jpg');
+	background-image: url('/ireneqi/paint.jpg');
 }
 
 .bg3 {
-	background-image: url('/code.jpg');
+	background-image: url('/ireneqi/code.jpg');
 }
 
 .bg4 {
-	background-image: url('/contact.jpg');
+	background-image: url('/ireneqi/contact.jpg');
 }
 
 .label {
