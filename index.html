@@ -238,56 +238,55 @@
 			    </div>
 			    <div id="collapse1" class="panel-collapse collapse in">
 			    	<div class="panel-body">
-			    		<span style="font-size: 12px; color: lightgray">Click to expand image</span>
-						<!-- The four columns -->
-						<div class="row">
-						  <div class="column">
-						    <img src="/ireneqi/bank.png" alt="1" style="width:100%; padding-left: 7px" onclick="openImg('1');">
-						  </div>
-						  <div class="column">
-						    <img src="/ireneqi/bankmac.png" alt="2" style="width:100%" onclick="openImg('2');">
-						  </div>
-						  <div class="column">
-						    <img src="/ireneqi/habitatrake.png" alt="3" style="width:100%" onclick="openImg('3');">
-						  </div>
-						  <div class="column">
-						    <img src="/ireneqi/flower.jpg" alt="4" style="width:100%; padding-right: 7px" onclick="openImg('4');">
-						  </div>
-						</div>
+					<!-- The four columns -->
+					<div class="row">
+					  <div class="column">
+					    <img src="/ireneqi/bank.png" alt="1" style="width:100%; padding-left: 7px" onclick="openImg('1');">
+					  </div>
+					  <div class="column">
+					    <img src="/ireneqi/bankmac.png" alt="2" style="width:100%" onclick="openImg('2');">
+					  </div>
+					  <div class="column">
+					    <img src="/ireneqi/habitatrake.png" alt="3" style="width:100%" onclick="openImg('3');">
+					  </div>
+					  <div class="column">
+					    <img src="/ireneqi/flower.jpg" alt="4" style="width:100%; padding-right: 7px" onclick="openImg('4');">
+					  </div>
+					</div>
 
-						<!-- The expanding image grid (hidden by default) -->
-						<div id="1" class="expandedImg">
-						  <a target="_blank" href="/ireneqi/bank.png"><img src="/ireneqi/bank.png" alt="1" style="width:100%"></a>
-						  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-						  <article style="background-color: #f5f5f5; padding-top: 5px"><p class="cap">This is a webpage mockup of a hypothetical bank's loan application process. My goals were to make the process seem easy to understand and to facilitate the process of choosing the right loan. <br><br> I chose to include a timeline of the application process to provide a quick and simple overview, and organized the packages in distinct blocks. If a customer has unanswered questions, a button at the bottom of the page would lead to a chat screen, and the customer would be connected to an employee.</p></article>
-						</div>
+					<!-- The expanding image grid (hidden by default) -->
+					<div id="1" class="expandedImg">
+					  <a target="_blank" href="/ireneqi/bank.png"><img src="/ireneqi/bank.png" alt="1" style="width:100%"></a>
+					  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+					  <article style="background-color: #f5f5f5; padding-top: 5px"><p class="cap">This is a webpage mockup of a hypothetical bank's loan application process. My goals were to make the process seem easy to understand and to facilitate the process of choosing the right loan. <br><br> I chose to include a timeline of the application process to provide a quick and simple overview, and organized the packages in distinct blocks. If a customer has unanswered questions, a button at the bottom of the page would lead to a chat screen, and the customer would be connected to an employee.</p></article>
+					</div>
 
-						<div id="2" class="expandedImg">
-						  <img src="/ireneqi/bankmac.png" alt="2" style="width:100%">
-						  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-						</div>
+					<div id="2" class="expandedImg">
+					  <img src="/ireneqi/bankmac.png" alt="2" style="width:100%">
+					  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+					</div>
 
-						<div id="3" class="expandedImg">
-						  <a target="_blank" href="/ireneqi/habitatrake.png"><img src="/ireneqi/habitatrake.png" alt="3" style="width:100%"></a>
-						  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-						  <article style="background-color: #f5f5f5; padding-top: 5px"><p class="cap">A flyer for Habitat for Humanity's Rake-A-Thon fundraiser.</p></article>
-						</div>
+					<div id="3" class="expandedImg">
+					  <a target="_blank" href="/ireneqi/habitatrake.png"><img src="/ireneqi/habitatrake.png" alt="3" style="width:100%"></a>
+					  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+					  <article style="background-color: #f5f5f5; padding-top: 5px"><p class="cap">A flyer for Habitat for Humanity's Rake-A-Thon fundraiser.</p></article>
+					</div>
 
-						<div id="4" class="expandedImg">
-						  <img src="/ireneqi/flower.jpg" alt="4" style="width:100%">
-						  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-						</div>
+					<div id="4" class="expandedImg">
+					  <img src="/ireneqi/flower.jpg" alt="4" style="width:100%">
+					  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+					</div>
 
-						<script>
-						function openImg(imgName) {
-						  var i, x;
-						  x = document.getElementsByClassName("expandedImg");
-						  for (i = 0; i < x.length; i++) {
-						     x[i].style.display = "none";
-						  }
-						  document.getElementById(imgName).style.display = "block";
-						}
-						</script>
+					<script>
+					function openImg(imgName) {
+					  var i, x;
+					  x = document.getElementsByClassName("expandedImg");
+					  for (i = 0; i < x.length; i++) {
+					     x[i].style.display = "none";
+					  }
+					  document.getElementById(imgName).style.display = "block";
+					}
+					</script>
 			    	</div>
 			    </div>
 			</div>
