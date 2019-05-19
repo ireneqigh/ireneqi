@@ -268,25 +268,25 @@
 					</div>
 
 					<!-- The expanding image grid (hidden by default) -->
-					<div id="1" class="expandedImg">
+					<div id="0" class="expandedImg">
 					  <a target="_blank" href="/fish.jpg"><img src="/fish.jpg" alt="1" style="width:100%"></a>
 					  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 					  <article style="background-color: #f5f5f5; padding-top: 5px"><p class="cap">Goldfish in the ocean, acrylic on canvas, 36x48.</p></article>
 					</div>
 
-					<div id="2" class="expandedImg">
+					<div id="1" class="expandedImg">
 					  <a target="_blank" href="/flowerchild18x24.jpg"><img src="flowerchild18x24.jpg" alt="2" style="width:100%">
 					  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 					  <article style="background-color: #f5f5f5; padding-top: 5px"><p class="cap">A woman in a field of flowers, acrylic on canvas, 18x24.</p></article>
 					</div>
 
-					<div id="3" class="expandedImg">					  
+					<div id="2" class="expandedImg">					  
 					  <a target="_blank" href="/duck.jpg"><img src="duck.jpg" alt="3" style="width:100%"></a>
 					  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 					  <article style="background-color: #f5f5f5; padding-top: 5px"><p class="cap">Two ducks swimming in a pond, oil on canvas, 9x12.</p></article>
 					</div>
 
-				        <div id="4" class="expandedImg">					  
+				        <div id="3" class="expandedImg">					  
 					  <a target="_blank" href="/man.jpg"><img src="man.jpg" alt="4" style="width:100%"></a>
 					  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 					  <article style="background-color: #f5f5f5; padding-top: 5px"><p class="cap">Drawing of an old man, charcoal on paper, 18x24.</p></article>
@@ -296,7 +296,7 @@
 					function openImg(imgName) {
 					  var i, x;
 					  x = document.getElementsByClassName("expandedImg");
-					  for (i = 0; i < x.length + 1; i++) {
+					  for (i = 0; i < x.length; i++) {
 					     x[i].style.display = "none";
 					  }
 					  document.getElementById(imgName).style.display = "block";
@@ -331,24 +331,24 @@
 					</div>
 
 					<!-- The expanding image grid (hidden by default) -->
-					<div id="1" class="expandedImg">
+					<div id="0" class="expandedImg">
 					  <a target="_blank" href="/bank.png"><img src="/bank.png" alt="1" style="width:100%"></a>
 					  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 					  <article style="background-color: #f5f5f5; padding-top: 5px"><p class="cap">This is a webpage mockup of a hypothetical bank's loan application process. My goals were to make the process seem easy to understand and to facilitate the process of choosing the right loan. <br><br> I chose to include a timeline of the application process to provide a quick and simple overview, and organized the packages in distinct blocks. If a customer has unanswered questions, a button at the bottom of the page would lead to a chat screen, and the customer would be connected to an employee.</p></article>
 					</div>
 
-					<div id="2" class="expandedImg">
+					<div id="1" class="expandedImg">
 					  <img src="/bankmac.png" alt="2" style="width:100%">
 					  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 					</div>
 
-					<div id="3" class="expandedImg">					  
+					<div id="2" class="expandedImg">					  
 					  <a target="_blank" href="/habitatgbm.png"><img src="habitatgbm.png" alt="3" style="width:100%"></a>
 					  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 					  <article style="background-color: #f5f5f5; padding-top: 5px"><p class="cap">A graphic for Habitat for Humanity's General Body Meeting.</p></article>
 					</div>
 
-				        <div id="4" class="expandedImg">					  
+				        <div id="3" class="expandedImg">					  
 					  <a target="_blank" href="/habitatrake.png"><img src="habitatrake.png" alt="4" style="width:100%"></a>
 					  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 					  <article style="background-color: #f5f5f5; padding-top: 5px"><p class="cap">A graphic for Habitat for Humanity's Fall 2017 Rake-A-Thon Fundraiser.</p></article>
@@ -358,7 +358,7 @@
 					function openImg(imgName) {
 					  var i, x;
 					  x = document.getElementsByClassName("expandedImg");
-					  for (i = 0; i < x.length + 1; i++) {
+					  for (i = 0; i < x.length; i++) {
 					     x[i].style.display = "none";
 					  }
 					  document.getElementById(imgName).style.display = "block";
