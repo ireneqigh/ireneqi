@@ -250,7 +250,7 @@
 			    </div>
 			  	<div id="collapse1" class="panel-collapse collapse in">
 			    	<div class="panel-body"> 
-					<p class="cap" style="padding-top: 0">I like to experiment with different subject matters, mediums, and styles. Please visit <a href="https://fineartamerica.com/profiles/1-irene-qi.html" style="color: gray">my page</a> for more artwork!</p>
+					<p class="cap" style="padding-top: 0">I like to experiment with different subject matters, mediums, and styles. Please visit <a href="https://fineartamerica.com/profiles/1-irene-qi.html" style="color: rgb(250, 180, 130)">my page</a> for more artwork!</p>
 			    		<div class="container-fluid"> 
 						    <div id="myCarousel" class="carousel slide" data-ride="carousel">
 						      <!-- Indicators -->
@@ -308,10 +308,73 @@
 			<div class="panel panel-default">
 			    <div class="panel-heading">
 			        <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Fine Art</a>
+			        </h4>
+			    </div>
+			    <div id="collapse1" class="panel-collapse collapse in">
+			    	<div class="panel-body">
+					<!-- The four columns -->
+					<div class="row">
+					  <div class="column">
+					    <img src="/fish.jpg" alt="1" style="width:100%; padding-left: 7px" onclick="openImg('1');">
+					  </div>
+					  <div class="column">
+					    <img src="/flowerchild18x24.jpg" alt="2" style="width:100%" onclick="openImg('2');">
+					  </div>
+					  <div class="column">
+					    <img src="/duck.jpg" alt="3" style="width:100%" onclick="openImg('3');">
+					  </div>
+			  	        <div class="column">
+					    <img src="/man.jpg" alt="4" style="width:100%; onclick="openImg('4');">
+					  </div> 
+					</div>
+
+					<!-- The expanding image grid (hidden by default) -->
+					<div id="1" class="expandedImg">
+					  <a target="_blank" href="/fish.jpg"><img src="/fish.jpg" alt="1" style="width:100%"></a>
+					  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+					  <article style="background-color: #f5f5f5; padding-top: 5px"><p class="cap">Goldfish in the ocean, acrylic on canvas, 36x48.</p></article>
+					</div>
+
+					<div id="2" class="expandedImg">
+					  <img src="/flowerchild18x24.jpg"><img src="flowerchild18x24.jpg" alt="2" style="width:100%">
+					  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+					  <article style="background-color: #f5f5f5; padding-top: 5px"><p class="cap">A woman in a field of flowers, acrylic on canvas, 18x24.</p></article>
+					</div>
+
+					<div id="3" class="expandedImg">					  
+					  <a target="_blank" href="/duck.jpg"><img src="duck.jpg" alt="3" style="width:100%"></a>
+					  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+					  <article style="background-color: #f5f5f5; padding-top: 5px"><p class="cap">Two ducks swimming in a pond, oil on canvas, 9x12.</p></article>
+					</div>
+
+				        <div id="4" class="expandedImg">					  
+					  <a target="_blank" href="/man.jpg"><img src="man.jpg" alt="4" style="width:100%"></a>
+					  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+					  <article style="background-color: #f5f5f5; padding-top: 5px"><p class="cap">Drawing of an old man, charcoal on paper, 18x24.</p></article>
+					</div>
+
+					<script>
+					function openImg(imgName) {
+					  var i, x;
+					  x = document.getElementsByClassName("expandedImg");
+					  for (i = 0; i < x.length; i++) {
+					     x[i].style.display = "none";
+					  }
+					  document.getElementById(imgName).style.display = "block";
+					}
+					</script>
+			    	</div>
+			    </div>
+			</div>
+				
+			<div class="panel panel-default">
+			    <div class="panel-heading">
+			        <h4 class="panel-title">
 			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Graphic Design</a>
 			        </h4>
 			    </div>
-			    <div id="collapse2" class="panel-collapse collapse">
+			    <div id="collapse2" class="panel-collapse collapse in">
 			    	<div class="panel-body">
 					<!-- The four columns -->
 					<div class="row">
