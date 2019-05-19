@@ -275,7 +275,7 @@
 					</div>
 
 					<div id="2" class="expandedImg">
-					  <img src="/flowerchild18x24.jpg"><img src="flowerchild18x24.jpg" alt="2" style="width:100%">
+					  <a target="_blank" href="/flowerchild18x24.jpg"><img src="flowerchild18x24.jpg" alt="2" style="width:100%">
 					  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 					  <article style="background-color: #f5f5f5; padding-top: 5px"><p class="cap">A woman in a field of flowers, acrylic on canvas, 18x24.</p></article>
 					</div>
@@ -296,7 +296,7 @@
 					function openImg(imgName) {
 					  var i, x;
 					  x = document.getElementsByClassName("expandedImg");
-					  for (i = 0; i < x.length; i++) {
+					  for (i = 0; i < x.length + 1; i++) {
 					     x[i].style.display = "none";
 					  }
 					  document.getElementById(imgName).style.display = "block";
@@ -358,7 +358,7 @@
 					function openImg(imgName) {
 					  var i, x;
 					  x = document.getElementsByClassName("expandedImg");
-					  for (i = 0; i < x.length; i++) {
+					  for (i = 0; i < x.length + 1; i++) {
 					     x[i].style.display = "none";
 					  }
 					  document.getElementById(imgName).style.display = "block";
